@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="315" height="323.954" viewBox="0 0 315 323.954">
+<defs>
+<style type="text/css">
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../../fonts/Gilroy-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../../fonts/Gilroy-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../../fonts/Gilroy-ExtraBold.otf);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../fonts/Gilroy-Light.otf');
+  font-weight: lighter;
+}
+
+.a{fill:#ffd32f;}
+.b{fill:#dfddcd;}
+.c,.f{fill:#5b3f34;}
+.d,.e{fill:#54443c;font-family: Gilroy;font-weight:800;}
+.d{font-size:58px;}.e{font-size:59px;}.f{font-size:15px;font-family:Gilroy;font-weight:300;}.g{font-family:Gilroy;font-weight:700;}</style>
+</defs>
+<path class="a" d="M330.745,890.43a97.7,97.7,0,0,1-73.608,161.978h-142.5a74.769,74.769,0,0,1-74.771-74.756V803.2a74.771,74.771,0,0,1,74.771-74.749h142.5A97.7,97.7,0,0,1,330.745,890.43Z" transform="translate(-39.862 -728.455)"/><g transform="translate(36.084 35.895)"><path class="b" d="M104.751,754.383A38.819,38.819,0,1,0,143.558,793.2,38.821,38.821,0,0,0,104.751,754.383Z" transform="translate(-65.926 -754.383)"/></g><path class="c" d="M77.853,788.611a22.3,22.3,0,1,0,44.6,0h-22.3v-22.3A22.3,22.3,0,0,0,77.853,788.611Z" transform="translate(-25.431 -714.076)"/><g transform="translate(36.864 171.11)"><path class="b" d="M184.835,911.892a59.172,59.172,0,1,1-59.173-59.173A59.171,59.171,0,0,1,184.835,911.892Z" transform="translate(-66.49 -852.719)"/><text class="d" transform="translate(58.7 74.85)"><tspan x="-35.09" y="0">04</tspan></text><g transform="translate(122.928)"><path class="b" d="M274.275,911.892A59.172,59.172,0,1,1,215.1,852.719,59.171,59.171,0,0,1,274.275,911.892Z" transform="translate(-155.932 -852.719)"/><text class="e" transform="translate(58.699 75.85)"><tspan x="-35.105" y="0">06</tspan></text></g></g><text class="f" transform="translate(40.341 137.786)"><tspan x="0" y="0">Categoría A</tspan><tspan class="g"><tspan x="0" y="19">4 a 6 años</tspan></tspan></text></svg>

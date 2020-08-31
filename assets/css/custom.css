@@ -56,6 +56,11 @@
 .bg-lightgreen{
     background: #C9ED32 !important;
 }
+.bg-violeta{
+    background: #EA348F ;
+}
+
+.border-radius-r-b{border-bottom-right-radius: 70px;}
 
 .card-tecnica{
   border: none;
@@ -206,7 +211,7 @@ height: 40px;
 }
 
 .br-15{
-  border-radius: 15px;
+  border-radius:30px;
 }
 
 .width-fit{
@@ -236,4 +241,21 @@ height: 40px;
 }
 .bg-lightblue-lapiz{
   background: linear-gradient(90deg, #32B9FD 80%, #FFFFFF 0%);
+}
+.img-limites{background:url(../images/sin-limites.jpg);background-size: cover;background-position: center;height: 100%;}
+.img-movimiento{background:url(../images/movimiento.jpg);background-size: cover;background-position: center;width: 100%; height: 300px;}
+.close {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 0 0px 0 #fff;
+  opacity: 1;
+}
+.btn-sm, .btn-group-sm>.btn {
+  padding: 0.1rem 0.5rem;
+}
+@media (max-width:768px){
+  .img-limites {
+    height: 100px;
+  }
 }

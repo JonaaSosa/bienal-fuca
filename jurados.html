@@ -76,20 +76,14 @@
     <div id="top"></div>
 
     <!-- Site navigation -->
-    <nav
-      class="site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top shadow-light bg-black p-0"
-      style="height: 72px"
-      data-navbar-base="navbar-dark"
-      data-navbar-toggled="navbar-light"
-      data-navbar-scrolled="navbar-light"
-    >
+    <nav class="site-navbar-transparent height-navbar navbar navbar-expand-lg navbar-dark fixed-top shadow-light bg-pastel px-xl-0 py-0">
       <div class="col-2 bg-pastel py-4 px-0 text-center">
         <img src="assets/images/svg/logo.svg" />
       </div>
 
       <!-- Toggler -->
       <button
-        class="navbar-toggler-alternative"
+        class="navbar-toggler-alternative "
         type="button"
         data-toggle="collapse"
         data-target="#navbarCollapse"
@@ -101,8 +95,8 @@
       </button>
 
       <!-- Collapse -->
-      <div class="col-10 p-0 d-flex justify-content-around h-100">
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="col-xl-10 d-xl-flex justify-content-around p-0 h-100">
+        <div class="collapse navbar-collapse " id="navbarCollapse">
           <!-- Navigation -->
           <ul
             class="navbar-nav justify-content-around h-100"
@@ -110,15 +104,15 @@
             id="navigation"
           >
             <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-pink"
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
             >
-              <a href="./index.html"
+              <a  href="./index.html"
                 class="nav-link font-weight-bold text-uppercase text-red roboto"
                 >La bienal</a
               >
             </li>
             <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-red"
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-red"
             >
               <a href="./index.html" class="nav-link text-uppercase text-pastel roboto"
                 >Categorias</a
@@ -135,23 +129,23 @@
             <li
               class="nav-item d-flex align-items-center justify-content-center flex-1 bg-green"
             >
-              <a
+              <a 
                 class="nav-link font-weight-bold text-uppercase text-yellow-light roboto"
                 >Bases y condiciones <i class="fa fa-chevron-down ml-2"></i
               ></a>
             </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-pink"
+            <li onclick="location.href='jurados.html';"
+              class="pointer nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
             >
-              <a
+              <a 
                 class="nav-link font-weight-bold text-uppercase text-red roboto"
                 >Jurado</a
               >
             </li>
             <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-yellow"
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
             >
-              <a href="./premios.html"
+              <a 
                 class="nav-link font-weight-bold text-uppercase text-red roboto"
                 >Premios</a
               >
@@ -184,20 +178,19 @@
       >
         <div class="container-fluid text-center text-white">
           <div class="row h-100">
-            <div class="col-3 pl-15 pt-15 bg-lightblue d-flex flex-column">
-              <div class="d-flex flex-column position-relative">
-                <h1 class="font-weight-bold fs-60 text-yellow">
-                  Nuestro <br />
+            <div class="col-12 col-xl-3 pl-xl-15 pt-xl-15 bg-lightblue justify-content-center justify-content-xl-start d-flex flex-column">
+              <div class="d-flex flex-column position-relative text-left">
+                <h1 class="font-weight-bold fs-60 text-yellow py-5 p-xl-0">
+                  Nuestro <br class="d-xl-block d-none" />
                   Jurado
                 </h1>
                 <img
-                  class="position-relative"
-                  style="top: 11rem"
+                  class="ojos-position"
                   src="assets/images/svg/ojos.svg"
                 />
               </div>
             </div>
-            <div class="col-9 pl-15 pt-13 text-left">
+            <div class="col-9 pl-xl-15 pt-xl-13 pl-8 pt-8 text-left">
               <h1 class="font-weight-bold m-0 fs-60 text-lightblue">
                 Susana Bergero
               </h1>
@@ -214,9 +207,9 @@
                 Luis Wells
               </h1>
             </div>
-            <div class="container-fluid position-absolute py-xl-6 bottom-0 w-100 bg-pastel">
+            <div class="container-fluid position-relative mt-6 mt-xl-0 position-xl-absolute py-xl-6 bottom-0 w-100 bg-pastel">
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-xl-6 mt-5 mt-xl-0 d-flex d-xl-block justify-content-around align-items-center">
                   <img
                     src="assets/images/svg/fuca-footer.svg"
                     height="43"
@@ -231,7 +224,7 @@
                     alt="logo"
                   />
                 </div>
-                <div class="col-6 d-flex justify-content-center align-items-center">
+                <div class="col-12 col-xl-6 mt-6 mt-xl-0 d-flex  justify-content-xl-center justify-content-around align-items-center">
                   <span class="font-weight-bold text-red fs-17"> <i class="fa fa-envelope" aria-hidden="true"></i>
                      bienal@fucaarte.org.ar</span
                   >

@@ -4659,7 +4659,7 @@ input[type=button].btn-block {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -4691,7 +4691,7 @@ input[type=button].btn-block {
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 2000px) {
   .navbar-expand-xl>.container,
   .navbar-expand-xl>.container-fluid,
   .navbar-expand-xl>.container-sm,
@@ -15994,7 +15994,7 @@ select.form-control.form-control-soft-dark:focus::-ms-value {
 }
 
 .navbar-dark .navbar-toggler-alternative-icon {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .navbar-dark .navbar-toggler-alternative-icon:before,

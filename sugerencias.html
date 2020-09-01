@@ -76,17 +76,14 @@
     <div id="top"></div>
 
     <!-- Site navigation -->
-    <nav
-      class="site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top shadow-light bg-black p-0"
-      style="height: 72px"
-    >
+    <nav class="site-navbar-transparent height-navbar navbar navbar-expand-lg navbar-dark shadow-light bg-pastel px-xl-0 py-0">
       <div class="col-2 bg-pastel py-4 px-0 text-center">
         <img src="assets/images/svg/logo.svg" />
       </div>
 
       <!-- Toggler -->
       <button
-        class="navbar-toggler-alternative"
+        class="navbar-toggler-alternative "
         type="button"
         data-toggle="collapse"
         data-target="#navbarCollapse"
@@ -98,8 +95,8 @@
       </button>
 
       <!-- Collapse -->
-      <div class="col-10 p-0 d-flex justify-content-around h-100">
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="col-xl-10 d-xl-flex justify-content-around p-0 h-100">
+        <div class="collapse navbar-collapse " id="navbarCollapse">
           <!-- Navigation -->
           <ul
             class="navbar-nav justify-content-around h-100"
@@ -107,24 +104,25 @@
             id="navigation"
           >
             <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-pink"
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
             >
-              <a
+              <a  href="#home"
                 class="nav-link font-weight-bold text-uppercase text-red roboto"
                 >La bienal</a
               >
             </li>
             <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-red"
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-red"
             >
-              <a class="nav-link text-uppercase text-pastel roboto"
+              <a href="./index.html" class="nav-link text-uppercase text-pastel roboto"
                 >Categorias</a
               >
             </li>
             <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-yellow"
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
             >
-              <a
+            
+              <a href="#participantes"
                 class="nav-link font-weight-bold text-uppercase text-red roboto"
                 >¿Como participar?</a
               >
@@ -132,31 +130,39 @@
             <li
               class="nav-item d-flex align-items-center justify-content-center flex-1 bg-green"
             >
-              <a
-                class="nav-link font-weight-bold text-uppercase text-yellow-light roboto"
-                >Bases y condiciones <i class="fa fa-chevron-down ml-2"></i
-              ></a>
+
+            <div class="dropdown w-100 text-center">
+              <a href="./index.html"
+                class="nav-link font-weight-bold text-uppercase text-yellow-light roboto dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                >Bases y condiciones</a
+              >
+              <div class="dropdown-menu w-100     text-align: center;" aria-labelledby="dropdownMenuButton">
+                <a href="./assets/pdfs/Bases ESP.pdf" target='_blank' download class="dropdown-item text-uppercase text-yellow-light font-weight-bold" href="#"><img src="assets/images/svg/arg.png"> Bases y condiciones</a>
+                <a href="./assets/pdfs/Bases ENG.pdf" target='_blank' download class="dropdown-item text-uppercase text-yellow-light font-weight-bold" href="#"><img src="assets/images/svg/eeuu.png"> Terms and conditions</a>
+              </div>
+            </div>
+
             </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-pink"
+            <li onclick="location.href='jurados.html';"
+              class="pointer nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
             >
-              <a
+              <a 
                 class="nav-link font-weight-bold text-uppercase text-red roboto"
                 >Jurado</a
               >
             </li>
             <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-yellow"
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
             >
-              <a
+              <a 
                 class="nav-link font-weight-bold text-uppercase text-red roboto"
                 >Premios</a
               >
             </li>
             <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-orange"
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-orange"
             >
-              <a
+              <a href="./index.html"
                 class="nav-link font-weight-bold text-uppercase text-violet roboto"
                 >Inscribirme</a
               >
@@ -165,7 +171,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Global overlay -->
     <div class="overlay overlay-global">
       <div class="overlay-inner bg-image-holder bg-cover "></div>
@@ -175,7 +180,7 @@
     <div class="ln-fullpage">
       <!-- Section - Home -->
       <section
-        class="ln-section d-flex min-vh-100 pb-0"
+        class="ln-section d-flex min-vh-100 pb-0 pt-0"
         data-anchor="home"
         data-tooltip="Home"
       >
@@ -232,7 +237,7 @@
                     <a href="#naturaleza">
                       <div class="bg-red br-15 width-fit pl-2 pr-4 py-1 mt-6 d-flex justify-content-center align-items-center text-yellow-light font-weight-bold">
                         <span class="circle-categorias bg-circle-categorias mr-3"></span>
-                        ver
+                        Ver
                       </div>
                     </a>
                   </div>
@@ -257,7 +262,7 @@
                     <a href="#limites">
                       <div class="bg-red br-15 width-fit pl-2 pr-4 py-1 mt-6 d-flex justify-content-center align-items-center text-yellow-light font-weight-bold">
                         <span class="circle-categorias bg-circle-categorias mr-3"></span>
-                        ver
+                        Ver
                       </div>
                     </a>
                   </div>
@@ -282,7 +287,7 @@
                     <a href="#movimiento">
                       <div class="bg-red br-15 width-fit pl-2 pr-4 py-1 mt-6 d-flex justify-content-center align-items-center text-yellow-light font-weight-bold">
                         <span class="circle-categorias bg-circle-categorias mr-3"></span>
-                        ver
+                        Ver
                       </div>
                     </a>
                   </div>
@@ -329,7 +334,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 d-none d-xl-block">
               <img src="assets/images/svg/iso.svg" height="auto" width="100%"/>
             </div>
           </div>
@@ -418,7 +423,7 @@
     <footer class="position-relative py-xl-6 bg-pastel">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-xl-6 mt-5 mt-xl-0 d-flex d-xl-block justify-content-around align-items-center">
             <img
               src="assets/images/svg/fuca-footer.svg"
               height="43"
@@ -433,19 +438,19 @@
               alt="logo"
             />
           </div>
-          <div class="col-6 d-flex justify-content-center align-items-center">
-            <span class="font-weight-bold text-red fs-17">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              bienal@fucaarte.org.ar</span
+          <div class="col-12 col-xl-6 mt-6 mb-6 mt-xl-0 d-flex  justify-content-xl-center justify-content-around align-items-center">
+            <span class="font-weight-bold text-red fs-17"> <i class="fa fa-envelope" aria-hidden="true"></i>
+               bienal@fucaarte.org.ar</span
             >
             <div class="ml-6">
               <img src="assets/images/svg/instagram-footer.svg" height="32" />
-              <img src="assets/images/svg/facebook-footer.svg" height="36" />
+              <img src="assets/images/svg/facebook-footer.svg"  height="36"/>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
 
     <!-- Libs JS -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>

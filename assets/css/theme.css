@@ -76,6 +76,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 article,
@@ -3365,7 +3366,7 @@ input[type=button].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
+  min-width:16rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
@@ -4450,7 +4451,20 @@ input[type=button].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #fff;
-  background-color: #405be8;
+  background-color: transparent;
+  position: relative;
+}
+.nav-pills .nav-link.active::after {
+  content: '';
+  position: absolute;
+  right: -70px;
+  width: 85px;
+  height: 100%;
+  z-index: 1;
+  top: 0px;
+  background-image: url(../../assets/images/svg/lapiz.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .nav-fill .nav-item {
@@ -7972,6 +7986,8 @@ button.bg-white:focus {
   }
 }
 @media (min-width: 1366px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1500px;}
   .pl-11,
 .px-11 {
   padding-left: 3rem !important;

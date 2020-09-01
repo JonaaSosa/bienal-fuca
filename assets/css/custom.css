@@ -215,35 +215,35 @@
 }
 
 .fs-60 {
-  font-size: 60px;
+  font-size: 60px;font-family: 'Gilroy';
 }
 
 .fs-48 {
-  font-size: 48px;
+  font-size: 48px;font-family: 'Gilroy';
 }
 
 .fs-40 {
-  font-size: 40px;
+  font-size: 40px;font-family: 'Gilroy';
 }
 
 .fs-30 {
-  font-size: 30px;
+  font-size: 30px;font-family: 'Gilroy';
 }
 
 .fs-26 {
-  font-size: 26px;
+  font-size: 26px;font-family: 'Gilroy';
 }
 
 .fs-22 {
-  font-size: 22px;
+  font-size: 22px;font-family: 'Gilroy';
 }
 
 .fs-18 {
-  font-size: 18px;
+  font-size: 18px;font-family: 'Gilroy';
 }
 
 .fs-17 {
-  font-size: 17px;
+  font-size: 17px;font-family: 'Gilroy';
 }
 
 .justify-evenly {
@@ -268,23 +268,23 @@
 }
 
 .bg-yellow-lapiz {
-  background: linear-gradient(90deg, #FFD32F 80%, #FFFFFF 0%);
+  background: linear-gradient(90deg, #FFD32F 90%, #FFFFFF 0%);
 }
 
 .bg-green-lapiz {
-  background: linear-gradient(90deg, #22C253 80%, #FFFFFF 0%);
+  background: linear-gradient(90deg, #22C253 90%, #FFFFFF 0%);
 }
 
 .bg-pink-lapiz {
-  background: linear-gradient(90deg, #FDA9D1 80%, #FFFFFF 0%);
+  background: linear-gradient(90deg, #FDA9D1 90%, #FFFFFF 0%);
 }
 
 .bg-red-lapiz {
-  background: linear-gradient(90deg, #FF3823 80%, #FFFFFF 0%);
+  background: linear-gradient(90deg, #FF3823 90%, #FFFFFF 0%);
 }
 
 .bg-lightblue-lapiz {
-  background: linear-gradient(90deg, #32B9FD 80%, #FFFFFF 0%);
+  background: linear-gradient(90deg, #32B9FD 90%, #FFFFFF 0%);
 }
 
 .img-limites {
@@ -314,6 +314,74 @@
   padding: 0.1rem 0.5rem;
 }
 
+
+
+.lapiz-amarillo, .lapiz-verde, .lapiz-rosa, .lapiz-azul{
+  height: 82px;
+}
+
+.lapiz-rojo{
+  height: 82px;
+}
+.lapiz-amarillo, .lapiz-verde, .lapiz-rosa, .lapiz-rojo, .lapiz-azul{
+  position: relative;
+}
+
+.lapiz-amarillo::after{
+  content: '';
+  position: absolute;
+  background: url(../../assets/images/svg/lapiz-amarillo.svg);
+  right: 30px;
+  height: 82px;
+  width: 82px;
+  top: 0;
+  z-index: 10000;
+  background-size: cover;
+}
+.lapiz-verde::after{
+  content: '';
+  position: absolute;
+  background: url(../../assets/images/svg/lapiz-verde.svg);
+  right: 30px;
+  height: 82px;
+  width: 82px;
+  top: 0;
+  z-index: 10000;
+  background-size: cover;
+}  
+.lapiz-rosa::after{
+  content: '';
+  position: absolute;
+  background: url(../../assets/images/svg/lapiz-rosa.svg);
+  right: 30px;
+  height: 82px;
+  width: 82px;
+  top: 0;
+  z-index: 10000;
+  background-size: cover;
+}
+.lapiz-rojo::after{
+  content: '';
+  position: absolute;
+  background: url(../../assets/images/svg/lapiz-rojo.svg);
+  right: 30px;
+  height: 82px;
+  width: 82px;
+  top: 0;
+  z-index: 10000;
+  background-size: cover;
+}
+.lapiz-azul::after{
+  content: '';
+  position: absolute;
+  background: url(../../assets/images/svg/lapiz-celeste.svg);
+  right: 30px;
+  height: 82px;
+  width: 82px;
+  top: 0;
+  z-index: 10000;
+  background-size: cover;
+}
 @media (max-width:768px) {
   .img-limites {
     height: 100px;
@@ -344,7 +412,7 @@
 }
 
 .position-text-lapiz {
-  padding: 2rem 5rem !important;
+  padding: 2rem 5.5rem !important;
 }
 
 .h-categorias {

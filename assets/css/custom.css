@@ -424,8 +424,11 @@
 }
 
 @media (min-width: 1366px) {
+  
   .height-navbar {
     height: 72px;
+    position: fixed;
+    width: 100%;
   }
   .ojos-position {
     top: 11rem;

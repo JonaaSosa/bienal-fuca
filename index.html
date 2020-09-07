@@ -426,45 +426,45 @@
             </div>
             <div class="col-12 col-lg-8 " data-animation="fadeInRight" data-animation-delay="150">
               <div class="contact-form">
-                <form class="mb-0" id="cf" name="cf" action="include/sendemail.php" method="post" autocomplete="off">
+                <form class="mb-0" id="cf" name="cf" action="include/upload.php" enctype="multipart/form-data" method="post" autocomplete="off">
                   <div class="form-row">
   
                     <div class="col-6">
                       <div class="col-12">
                         <div class="form-group  text-black-70 font-weight-bold">
                           <label for="exampleInputEmail1">Nombre y Apellido del participante</label>
-                          <input type="email" name="participante" class="text-black-70 form-control"
+                          <input type="text" name="participante" class="text-black-70 form-control"
                             id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                       </div>
                       <div class="col-12">
                         <div class="form-group  text-black-70 font-weight-bold">
                           <label for="exampleInputEmail1">DNI del participante</label>
-                          <input type="email" name="dni_participante" class="text-black-70 form-control"
+                          <input type="number" min="0" name="dni_participante" class="text-black-70 form-control"
                             id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                       </div>
                       <div class="col-12">
                         <div class="form-group  text-black-70 font-weight-bold">
                           <label for="exampleInputEmail1">Fecha de nacimiento</label>
-                          <input type="email" name="fecha_nacimiento_participante" class="text-black-70 form-control"
+                          <input type="date" name="fecha_nacimiento_participante" class="text-black-70 form-control"
                             id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                       </div>
                       <div class="col-12">
                         <div class="form-group  text-black-70 font-weight-bold">
                           <label for="exampleInputEmail1">Nacionalidad</label>
-                          <input type="email" name="nacionalidad" class="text-black-70 form-control"
+                          <input type="text" name="nacionalidad" class="text-black-70 form-control"
                             id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group  text-black-70 font-weight-bold">
                           <label for="exampleInputEmail1">Nombre de Escuela a la que asiste</label>
-                          <input type="email" name="nombre_escuela" class="text-black-70 form-control"
+                          <input type="text" name="nombre_escuela" class="text-black-70 form-control"
                             id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group  text-black-70 font-weight-bold">
                           <label for="exampleInputEmail1">Nombre y apellido del Padre,madre/tutor</label>
-                          <input type="email" name="responsable" class="text-black-70 form-control"
+                          <input type="text" name="responsable" class="text-black-70 form-control"
                             id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                       </div>
@@ -474,7 +474,7 @@
                       <div class="col-12">
                         <div class="form-group  text-black-70 font-weight-bold">
                           <label for="exampleInputEmail1">Nº de Teléfono</label>
-                          <input type="email" name="telefono" class="text-black-70 form-control" id="exampleInputEmail1"
+                          <input type="tel" name="telefono" class="text-black-70 form-control" id="exampleInputEmail1"
                             aria-describedby="emailHelp">
                         </div>
                       </div>
@@ -489,12 +489,18 @@
                         </div>
                       </div>
   
-  
-  
                       <div class="col-12">
                         <div class="form-group  text-black-70 font-weight-bold">
                           <label for="exampleInputEmail1">Domicilio</label>
-                          <input type="email" name="domicilio" class="text-black-70 form-control" id="exampleInputEmail1"
+                          <input type="text" name="domicilio" class="text-black-70 form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="form-group  text-black-70 font-weight-bold">
+                          <label for="exampleInputEmail1">Adjuntar imagen</label>
+                          <input type="file" id="imagen" name="upload[]" multiple accept=".png, .jpg, .jpeg" class="text-black-70 form-control" 
                             aria-describedby="emailHelp">
                         </div>
                       </div>
@@ -583,10 +589,44 @@
     <script src="assets/vendor/slick/slick.min.js"></script>
     <script src="assets/vendor/vegas/vegas.min.js"></script>
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc-AcYZAAAAANjh7wyVkolijRvXYOp9wos-y54b"></script>
 
 
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      $('form').submit(function (event) {
+        event.preventDefault();
+        grecaptcha.ready(function () {
+          grecaptcha.execute('6Lc-AcYZAAAAANjh7wyVkolijRvXYOp9wos-y54b', { action: 'bienal' }).then(function (token) {
+            $('form').prepend('<input type="hidden" name="token" value="' + token + '">');
+            $('form').prepend('<input type="hidden" name="action" value="bienal">');
+            $('form').unbind('submit').submit();
+          });;
+        });
+      });
+
+      
+$("#imagen").change(function(e) {
+
+for (var i = 0; i < e.originalEvent.srcElement.files.length; i++) {
+    
+    var file = e.originalEvent.srcElement.files[i];
+    
+    var img = document.createElement("img");
+    img.style.width ="150px";
+    img.style.height ="150px";
+        var reader = new FileReader();
+    reader.onloadend = function() {
+         img.src = reader.result;
+    }
+    reader.readAsDataURL(file);
+    $("#imagen").after(img);
+}
+});
+
+    </script>
 
   </body>
 

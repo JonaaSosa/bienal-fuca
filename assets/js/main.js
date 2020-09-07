@@ -19,7 +19,7 @@
   function getWindowWidth() {
    return Math.max($(window).width(), window.innerWidth);
   }
- 
+
   function getWindowHeight() {
    return Math.max($(window).height(), window.innerHeight);
   }

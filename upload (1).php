@@ -31,8 +31,10 @@ $res = json_decode($response, true);
 
 
 if ($res['success'] == true) {
+    
 
-    $to = "nicolasssosa@hotmail.com";
+    $to = "jonathansosa@gmail.com";
+
 
     $participante = isset($_POST["participante"]) ? $_POST["participante"] : null;
     $dni_participante = isset($_POST["dni_participante"]) ? $_POST["dni_participante"] : null;
@@ -50,37 +52,37 @@ if ($res['success'] == true) {
     $linea = $fecha . ";" . strtoupper($participante) . ";" . $dni_participante . ";" . $fecha_nacimiento_participante . ";" .  strtoupper($nacionalidad) . ";" . strtoupper($nombre_escuela) . ";" . strtoupper($responsable) . ";" . $telefono .  ";" . strtoupper($domicilio) .  ";" . $email . "\n";
     file_put_contents($fichero, $linea, FILE_APPEND | LOCK_EX);
 
-    $body = "Nombre y Apellido: $participante<br><br>";
-    $body .= "Documento: $dni_participante<br><br>";
-    $body .= "Fecha de nacimiento: $fecha_nacimiento_participante<br><br>";
-    $body .= "Nacionalidad: $nacionalidad<br><br>";
-    $body .= "Nombre de la escuela: $nombre_escuela<br><br>";
-    $body .= "Responsable: $responsable<br><br>";
-    $body .= "Telefono: $telefono<br><br>";
-    $body .= "Domicilio: $domicilio<br><br>";
-    $body .= "Email: $email<br><br>";
+    $body = "Nombre y Apellido: $participante<br><br>" ;
+    $body.= "Documento: $dni_participante<br><br>";
+    $body.= "Fecha de nacimiento: $fecha_nacimiento_participante<br><br>";
+    $body.= "Nacionalidad: $nacionalidad<br><br>";
+    $body.= "Nombre de la escuela: $nombre_escuela<br><br>";
+    $body.= "Responsable: $responsable<br><br>";
+    $body.="Telefono: $telefono<br><br>";
+    $body.= "Domicilio: $domicilio<br><br>";
+    $body.= "Email: $email<br><br>";
 
     $to = $to;
     $asunto = $subject;
 
     if (!file_exists($dni_participante)) {
         mkdir($dni_participante, 0777, true);
-
+       
         //necesita <input name="upload[]" type="file" multiple="multiple" />
-
+        
         $total = count($_FILES['upload']['name']);
-        for ($i = 0; $i < $total; $i++) {
-            $tmpFilePath = $_FILES['upload']['tmp_name'][$i];
-            if ($tmpFilePath != "") {
-                $newFilePath = $dni_participante . "/" . $_FILES['upload']['name'][$i];
-                if (move_uploaded_file($tmpFilePath, $newFilePath)) {
-                }
-            }
-            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                return enviarMail($to, $asunto, $body);
+        for( $i=0 ; $i < $total ; $i++ ) {
+        $tmpFilePath = $_FILES['upload']['tmp_name'][$i];
+        if ($tmpFilePath != ""){
+            $newFilePath = $dni_participante."/" . $_FILES['upload']['name'][$i];
+            if(move_uploaded_file($tmpFilePath, $newFilePath)) {
             }
         }
-    } else {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $mail_enviado = enviarMail($to, $asunto, $body);
+          return $mail_enviado;
+        }
+    }else{
         echo "El participante ya cuanta con una inscripción en curso";
     }
 }
@@ -90,7 +92,7 @@ function enviarMail($to, $asunto, $cuerpo)
     $mail = new PHPMailer(true);
 
     try {
-
+        
         $mail->SMTPDebug = SMTP::DEBUG_OFF;
         $mail->isSMTP();
 
@@ -101,11 +103,11 @@ function enviarMail($to, $asunto, $cuerpo)
         $mail->SMTPAuth = true;
         $mail->Username = "no-reply@fucaarte.org";
         $mail->Password = "fED^@wsGK*QG";
-
+      
         $mail->setFrom('no-reply@fucaarte.org', 'no-reply');
-        $mail->addAddress($to);
+        $mail->addAddress($to); 
 
-        $mail->isHTML(true);
+        $mail->isHTML(true);                                 
         $mail->Subject = $asunto;
         $mail->Body    = $cuerpo;
         $mail->AltBody = $cuerpo;
@@ -116,5 +118,3 @@ function enviarMail($to, $asunto, $cuerpo)
         return "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
-
-?>

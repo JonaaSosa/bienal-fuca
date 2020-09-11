@@ -76,14 +76,19 @@
     <div id="top"></div>
 
     <!-- Site navigation -->
-    <nav class="site-navbar-transparent height-navbar navbar navbar-expand-lg navbar-dark fixed-top shadow-light bg-pastel px-xl-0 py-0">
-      <div class="col-2 bg-pastel py-4 px-0 text-center">
+    <nav
+      class="site-navbar-transparent height-navbar navbar navbar-expand-lg navbar-dark fixed-top shadow-light bg-pastel px-xl-0 py-0"
+    >
+      <a
+        href="https://fucaarte.org/"
+        class="col-2 bg-pastel py-4 px-0 text-center"
+      >
         <img src="assets/images/svg/logo.svg" />
-      </div>
+      </a>
 
       <!-- Toggler -->
       <button
-        class="navbar-toggler-alternative "
+        class="navbar-toggler-alternative"
         type="button"
         data-toggle="collapse"
         data-target="#navbarCollapse"
@@ -96,77 +101,106 @@
 
       <!-- Collapse -->
       <div class="col-xl-10 d-xl-flex justify-content-around p-0 h-100">
-        <div class="collapse navbar-collapse " id="navbarCollapse">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
           <!-- Navigation -->
           <ul
             class="navbar-nav justify-content-around h-100"
             style="flex: 1"
             id="navigation"
           >
-          <li
-          class="nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
-        >
-          <a  href="#bienal"
-            class="nav-link font-weight-bold text-uppercase text-red roboto"
-            >La bienal</a
-          >
-        </li>
-        <li
-          class="nav-item d-flex align-items-center justify-content-center flex--75 bg-red"
-        >
-          <a href="./index.html#bienal" class="nav-link text-uppercase text-pastel roboto"
-            >Categorias</a
-          >
-        </li>
-        <li
-          class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
-        >
-        
-          <a href="#participantes"
-            class="text-center nav-link font-weight-bold text-uppercase text-red roboto"
-            >¿Como participar?</a
-          >
-        </li>
-        <li
-          class="nav-item d-flex align-items-center justify-content-center flex-1 bg-green"
-        >
-
-        <div class="dropdown w-100 text-center">
-          <a href="./index.html"
-            class="nav-link font-weight-bold text-uppercase text-yellow-light roboto dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-            >Bases y condiciones</a
-          >
-          <div class="dropdown-menu w-100 " aria-labelledby="dropdownMenuButton">
-            <a href="./assets/pdfs/Bases ESP.pdf" target='_blank' download class="dropdown-item text-uppercase text-yellow-light font-weight-bold" href="#"><img src="assets/images/svg/arg.png"> Bases y condiciones</a>
-            <a href="./assets/pdfs/Bases ENG.pdf" target='_blank' download class="dropdown-item text-uppercase text-yellow-light font-weight-bold" href="#"><img src="assets/images/svg/eeuu.png"> Terms and conditions</a>
-          </div>
-        </div>
-
-        </li>
-        <li 
-          class="pointer nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
-        >
-          <a href="./jurados.html"
-            class="nav-link font-weight-bold text-uppercase text-red roboto"
-            >Jurado</a
-          >
-        </li>
-        <li
-          class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
-        >
-          <a href="./premios.html"
-            class="nav-link font-weight-bold text-uppercase text-red roboto"
-            >Premios</a
-          >
-        </li>
-        <li
-          class="nav-item d-flex align-items-center justify-content-center flex--75 bg-orange"
-        >
-          <a href="./index.html#inscripcion"
-            class="nav-link font-weight-bold text-uppercase text-violet roboto"
-            >Inscribirme</a
-          >
-        </li>
+            <li
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
+            >
+              <a
+                href="#bienal"
+                class="nav-link font-weight-bold text-uppercase text-red roboto"
+                >La bienal</a
+              >
+            </li>
+            <li
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-red"
+            >
+              <a
+                href="./index.html#bienal"
+                class="nav-link text-uppercase text-pastel roboto"
+                >Categorias</a
+              >
+            </li>
+            <li
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
+            >
+              <a
+                href="#participantes"
+                class="text-center nav-link font-weight-bold text-uppercase text-red roboto"
+                >¿Como participar?</a
+              >
+            </li>
+            <li
+              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-green"
+            >
+              <div class="dropdown w-100 text-center">
+                <a
+                  href="./index.html"
+                  class="nav-link font-weight-bold text-uppercase text-yellow-light roboto dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Bases y condiciones</a
+                >
+                <div
+                  class="dropdown-menu w-100"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <a
+                    href="./assets/pdfs/Bases ESP.pdf"
+                    target="_blank"
+                    download
+                    class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center"
+                    href="#"
+                    ><img src="assets/images/svg/arg.png" /> Bases y
+                    condiciones</a
+                  >
+                  <a
+                    href="./assets/pdfs/Bases ENG.pdf"
+                    target="_blank"
+                    download
+                    class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center"
+                    href="#"
+                    ><img src="assets/images/svg/eeuu.png" /> Terms and
+                    conditions</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li
+              class="pointer nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
+            >
+              <a
+                href="./jurados.html"
+                class="nav-link font-weight-bold text-uppercase text-red roboto"
+                >Jurado</a
+              >
+            </li>
+            <li
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
+            >
+              <a
+                href="./premios.html"
+                class="nav-link font-weight-bold text-uppercase text-red roboto"
+                >Premios</a
+              >
+            </li>
+            <li
+              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-orange"
+            >
+              <a
+                href="./index.html#inscripcion"
+                class="nav-link font-weight-bold text-uppercase text-violet roboto"
+                >Inscribirme</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -187,15 +221,14 @@
       >
         <div class="container-fluid text-center text-white">
           <div class="row h-100">
-            <div class="col-12 col-xl-3 pl-xl-15 pt-xl-15 bg-warning justify-content-center justify-content-xl-start d-flex flex-column">
+            <div
+              class="col-12 col-xl-3 pl-xl-15 pt-xl-15 bg-warning justify-content-center justify-content-xl-start d-flex flex-column"
+            >
               <div class="d-flex flex-column position-relative text-left">
                 <h1 class="font-weight-bold fs-60 text-violet py-5 p-xl-0">
                   Staff
                 </h1>
-                <img
-                  class="ojos-position"
-                  src="assets/images/svg/ojos.svg"
-                />
+                <img class="ojos-position" src="assets/images/svg/ojos.svg" />
               </div>
             </div>
             <div class="col-9 pl-xl-15 pt-xl-13 pl-8 pt-8 text-left">
@@ -209,25 +242,26 @@
                 Director artístico:
               </h4>
               <h1 class="font-weight-bold m-0 mb-5 fs-60 text-violet">
-                 Daniel Capardi
+                Daniel Capardi
               </h1>
               <h4 class="font-weight-bold m-0 text-violet">
                 Diseño web y comunicación:
               </h4>
               <h1 class="font-weight-bold m-0 mb-5 fs-60 text-violet">
-                 Di Cuore Comunicación
+                Di Cuore Comunicación
               </h1>
-              <h4 class="font-weight-bold m-0 text-violet">
-                Diseño gráfico:
-              </h4>
+              <h4 class="font-weight-bold m-0 text-violet">Diseño gráfico:</h4>
               <h1 class="font-weight-bold m-0 fs-60 text-violet">
-                 Octavio Martino
+                Octavio Martino
               </h1>
-             
             </div>
-            <div class="container-fluid position-relative mt-6 mt-xl-0 position-xl-absolute py-xl-6 bottom-0 w-100 bg-pastel">
+            <div
+              class="container-fluid position-relative mt-6 mt-xl-0 position-xl-absolute py-xl-6 bottom-0 w-100 bg-pastel"
+            >
               <div class="row">
-                <div class="col-12 col-xl-6 mt-5 mt-xl-0 d-flex d-xl-block justify-content-around align-items-center">
+                <div
+                  class="col-12 col-xl-6 mt-5 mt-xl-0 d-flex d-xl-block justify-content-around align-items-center"
+                >
                   <img
                     src="assets/images/svg/fuca-footer.svg"
                     height="43"
@@ -242,20 +276,32 @@
                     alt="logo"
                   />
                 </div>
-                <div class="col-12 col-xl-6 mt-6 mt-xl-0 d-flex  justify-content-xl-center justify-content-around align-items-center">
-                  <span class="font-weight-bold text-red fs-17"> <i class="fa fa-envelope" aria-hidden="true"></i>
-                     bienal@fucaarte.org.ar</span
+                <div
+                  class="col-12 col-xl-6 mt-6 mt-xl-0 d-flex justify-content-xl-center justify-content-around align-items-center"
+                >
+                  <span class="font-weight-bold text-brown fs-17">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    bienal@fucaarte.org.ar</span
                   >
                   <div class="ml-6">
-                    <img src="assets/images/svg/instagram-footer.svg" height="32" />
-                    <img src="assets/images/svg/facebook-footer.svg"  height="36"/>
+                    <a href="https://www.instagram.com/bienaldearteinfantil/">
+                      <img
+                        src="assets/images/svg/instagram-footer.svg"
+                        height="32"
+                      />
+                    </a>
+                    <a href="https://www.facebook.com/LaBienalBA/">
+                      <img
+                        src="assets/images/svg/facebook-footer.svg"
+                        height="36"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-   
       </section>
     </div>
 

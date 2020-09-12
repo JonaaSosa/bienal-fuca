@@ -6,7 +6,7 @@
 
 @media (max-width: 1024px) {
   .fs-60 {
-    font-size: 40px;
+    font-size: 40px!important;
   }
   .fs-17 {
     font-size: 15px;
@@ -115,9 +115,7 @@ input[type="checkbox"]:checked {
   background: #ea348f;
 }
 
-.border-radius-r-b {
-  border-bottom-right-radius: 70px;
-}
+
 
 .card-tecnica {
   border: none;
@@ -126,6 +124,9 @@ input[type="checkbox"]:checked {
 
 .text-lightblue {
   color: #32b9fd;
+}
+.text-green {
+  color: #22C253;
 }
 
 .text-orange {
@@ -177,7 +178,7 @@ input[type="checkbox"]:checked {
 }
 
 .text-sugerencias {
-  color: #343434 !important;
+  color: #DFDDCD !important;
 }
 
 .card-pdfs {
@@ -229,6 +230,11 @@ input[type="checkbox"]:checked {
 .circle-categorias {
   width: 20px;
   height: 20px;
+  border-radius: 50%;
+}
+.circle-sugerencias {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 
@@ -328,9 +334,9 @@ input[type="checkbox"]:checked {
 }
 
 .close {
-  font-size: 1.9rem;
-  font-weight: 500;
-  color: #fff;
+  font-size: 2.9rem;
+  font-weight: 900;
+  color: #DFDDCD;
   text-shadow: 0 0px 0 #fff;
   opacity: 1;
 }
@@ -413,7 +419,29 @@ input[type="checkbox"]:checked {
   z-index: 10000;
   background-size: cover;
 }
+
+.circular-sugerencias{    border-radius: 200px;
+  height: 290px!important;}
+.modal-section{margin-left: -15px;}
+.b-w-2{border-width: 2px!important;}
+.b-white{border-color: white!important;}
+
+.huellas {
+  position: absolute;
+  top: 0px;
+  left: -100px;
+}
+.s-marcador{background-color: #fda9d1;}
+
 @media (max-width: 768px) {
+  .huellas {
+    position: relative;left: 0px;margin-bottom: 30px;
+}
+  .modal-section {margin-left: 0px;}
+  .bg-white-sm{background: white!important;}
+  .border-radius-r-b {
+    border-bottom-right-radius: 70px;
+  }
   .img-limites {
     height: 100px;
   }

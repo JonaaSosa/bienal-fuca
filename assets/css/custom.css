@@ -462,8 +462,9 @@ input[type="checkbox"]:checked {
   left: -100px;
 }
 .s-marcador{background-color: #fda9d1;}
-
+.height-menu-cats{height: 60px;}
 @media (max-width: 768px) {
+  .height-menu-cats{height: auto;}
   .huellas {
     position: relative;left: 0px;margin-bottom: 30px;
 }

@@ -66,9 +66,16 @@ input[type="checkbox"]:checked {
 .bg-lightblue {
   background: #32b9fd;
 }
+.bg-blue-dark {
+  background: #4471be;
+}
 
 .bg-pink {
   background: #fda9d1;
+}
+
+.bg-pink-dark {
+  background: #ea46a0;
 }
 
 .bg-pastel {
@@ -115,7 +122,17 @@ input[type="checkbox"]:checked {
   background: #ea348f;
 }
 
+.bg-brown {
+  background: #cd643e;
+}
 
+.bg-violet-light {
+  background: #b9b2ee;
+}
+
+.border-radius-r-b {
+  border-bottom-right-radius: 70px;
+}
 
 .card-tecnica {
   border: none;
@@ -126,7 +143,12 @@ input[type="checkbox"]:checked {
   color: #32b9fd;
 }
 .text-green {
-  color: #22C253;
+  color: #22C253;}
+.text-blue-dark {
+  color: #4471be !important;
+}
+.text-sky {
+  color: #c0eafd !important;
 }
 
 .text-orange {
@@ -143,6 +165,10 @@ input[type="checkbox"]:checked {
 
 .text-yellow-light {
   color: #fff684 !important;
+}
+
+.text-yellow-dark {
+  color: #ffe326 !important;
 }
 
 .text-violet {
@@ -169,14 +195,18 @@ input[type="checkbox"]:checked {
   line-height: normal;
 }
 
+
 .text-grey {
-  color: #54443c;
+  color: #54443c !important;
 }
 
 .text-pink {
   color: #fda9d1;
 }
 
+.text-pink-dark {
+  color: #ea46a0 !important;
+}
 .text-sugerencias {
   color: #DFDDCD !important;
 }

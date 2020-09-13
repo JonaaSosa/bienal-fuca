@@ -35,8 +35,8 @@
     <div id="top"></div>
 
     <!-- Site navigation -->
-    <nav class="site-navbar-transparent height-navbar navbar navbar-expand-lg navbar-dark shadow-light bg-pastel px-xl-0 py-0">
-      <a  href="https://fucaarte.org/" class="col-2 bg-pastel py-4 px-0 text-center">
+    <nav class="site-navbar-transparent height-navbar navbar navbar-expand-lg navbar-dark shadow-light bg-lightblue px-xl-0 py-0">
+      <a  href="https://fucaarte.org/" class="col-2 bg-lightblue py-4 px-0 text-center">
         <img src="assets/images/svg/logo.svg" />
       </a>
 
@@ -57,74 +57,40 @@
       <div class="col-xl-10 d-xl-flex justify-content-around p-0 h-100">
         <div class="collapse navbar-collapse " id="navbarCollapse">
           <!-- Navigation -->
-          <ul
-            class="navbar-nav justify-content-around h-100"
-            style="flex: 1"
-            id="navigation"
-          >
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
-            >
-              <a  href="#bienal"
-                class="nav-link font-weight-bold text-uppercase text-red roboto"
-                >La bienal</a
-              >
-            </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-red"
-            >
-              <a href="./index.html#bienal" class="nav-link text-uppercase text-pastel roboto"
-                >Categorias</a
-              >
-            </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
-            >
-            
-              <a href="#participantes"
-                class="text-center nav-link font-weight-bold text-uppercase text-red roboto"
-                >¿Como participar?</a
-              >
-            </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-green"
-            >
-
-            <div class="dropdown w-100 text-center">
-              <a href="./index.html"
-                class="nav-link font-weight-bold text-uppercase text-yellow-light roboto dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                >Bases y condiciones</a
-              >
-              <div class="dropdown-menu w-100 " aria-labelledby="dropdownMenuButton">
-                <a href="./assets/pdfs/Bases ESP.pdf" target='_blank' download class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center" href="#">Bases y condiciones</a>
-                <a href="./assets/pdfs/Bases ENG.pdf" target='_blank' download class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center" href="#">Terms and conditions</a>
+          <ul class="navbar-nav justify-content-around h-100" style="flex: 1" id="navigation">
+            <li class="nav-item d-flex align-items-center justify-content-center flex-1 bg-pink">
+              <div class="dropdown w-100 text-center">
+                <a href="./index.html" class="nav-link font-weight-bold text-uppercase text-red roboto dropdown-toggle" type="button" id="dropdownMenuBienal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  La Bienal</a>
+                <div class="dropdown-menu w-100 " aria-labelledby="dropdownMenuBienal">
+                  <a  href="staff.html" download class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center">Staff</a>
+                </div>
               </div>
-            </div>
-
             </li>
-            <li 
-              class="pointer nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
-            >
-              <a href="./jurados.html"
-                class="nav-link font-weight-bold text-uppercase text-red roboto"
-                >Jurado</a
-              >
+            <li class="nav-item d-flex align-items-center justify-content-center flex--75 bg-green">
+              <a href="./index.html#bienal" class="nav-link text-uppercase text-yellow-dark roboto">Categorias</a>
             </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
-            >
-              <a href="./premios.html"
-                class="nav-link font-weight-bold text-uppercase text-red roboto"
-                >Premios</a
-              >
+            <li class="nav-item d-flex align-items-center justify-content-center flex--75 bg-orange">
+              <a href="#participantes" class="text-center nav-link font-weight-bold text-uppercase text-grey roboto">¿Como participar?</a>
             </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-orange"
-            >
-              <a href="./index.html#inscripcion"
-                class="nav-link font-weight-bold text-uppercase text-violet roboto"
-                >Inscribirme</a
-              >
+            <li class="nav-item d-flex align-items-center justify-content-center flex-1 bg-brown">
+              <div class="dropdown w-100 text-center">
+                <a href="./index.html" class="nav-link font-weight-bold text-uppercase text-sky roboto dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Bases y condiciones</a>
+                <div class="dropdown-menu w-100 " aria-labelledby="dropdownMenuButton">
+                  <a href="./assets/pdfs/Bases ESP.pdf" target='_blank' download class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center" href="#">Bases y condiciones</a>
+                  <a href="./assets/pdfs/Bases ENG.pdf" target='_blank' download class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center" href="#">Terms and conditions</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-flex align-items-center justify-content-center flex--75 bg-violet-light">
+              <a href="./index.html#inscripcion" class="nav-link font-weight-bold text-uppercase text-blue-dark roboto">Inscribirme</a>
+            </li>
+            <li class="pointer nav-item d-flex align-items-center justify-content-center flex--75 bg-lightgreen">
+              <a href="./jurados.html" class="nav-link font-weight-bold text-uppercase text-pink-dark roboto">Jurado</a>
+            </li>
+            <li class="nav-item d-flex align-items-center justify-content-center flex--75 bg-pink-dark">
+              <a href="./premios.html" class="nav-link font-weight-bold text-uppercase text-yellow-dark roboto">Premios</a>
             </li>
           </ul>
         </div>
@@ -142,25 +108,23 @@
       <section class="ln-section d-flex min-vh-100 pb-0 pt-0" data-anchor="home" data-tooltip="Home">
         <div class="container-fluid text-center text-white">
           <div class="row h-100">
-            <div class="col-4 col-xl-2 bg-pink d-flex flex-column justify-content-center">
+            <div class="col-4 col-xl-2 bg-pastel d-flex flex-column justify-content-center">
               <div class="d-flex flex-column h-100 justify-content-between position-relative" >
-                <img src="assets/images/svg/4.svg" class="mt-13" />
-                <img class="position-relative mb-8" src="assets/images/svg/bienal_arte.svg"/>
+                <img src="assets/images/svg/bienal_arte.svg" class="mt-20" />
+                <img class="position-relative mb-10" src="assets/images/svg/1.svg"/>
               </div>
             </div>
             <div class="col-8 col-xl-10 mt-xl-9 mx-auto text-left">
               <div class="row h-100">
-                <div class="col-2 align-items-end pb-xl-8 pl-xl-8 d-none d-xl-flex">
-                  <h1 class="text-main pl-7 pb-5">Mira tu mundo.</h1>
+                <div class="col-2 col-xl-4 align-items-end pb-xl-8 pl-xl-8 d-none d-xl-flex">
+                  <h1 class="text-main pl-7 pb-5">Mira tu mundo</h1>
                 </div>
-                <div class="col-12 col-xl-10 pr-0 d-flex justify-content-between align-items-end flex-column">
+                <div class="col-12 col-xl-8 pr-0 d-flex justify-content-between align-items-end flex-column">
                   <div class="mr-8 mt-8">
-                    <img src="assets/images/svg/instagram.svg">
-                    <img class="ml-2" src="assets/images/svg/facebook.svg">
+                    <a href="https://www.instagram.com/bienaldearteinfantil/" target="blank"><img src="assets/images/svg/instagram.svg"></a>
+                    <a href="https://www.facebook.com/Bienal-de-Arte-Infantil-FUCA-110994787393263/" target="blank"><img class="ml-2" src="assets/images/svg/facebook.svg"></a>
                   </div>
-
-                  <h1 class="text-main pl-7 pb-5 d-block d-xl-none">Mira tu mundo.</h1>
-
+                  <h1 class="text-main pl-7 pb-5 d-block d-xl-none">Mira tu mundo</h1>
                     <img class="mobile-height-main" src="assets/images/svg/main.svg" >
                 </div>
             </div>
@@ -186,27 +150,26 @@
                     
                     <div class="col-lg-4 col-12 d-flex">
                       <div class="d-flex flex-column align-items-center mb-11 mb-xl-0">
-                        <img src="assets/images/svg/categoria1.svg" class="h-categorias">
+                        <img src="assets/images/svg/categoria-1.svg" class="h-categorias">
                         <a href="./categoria-amarilla.html" class="bg-yellow br-15 width-fit px-2 py-1 mt-6 d-flex justify-content-center align-items-center text-red font-weight-bold"><span class="circle-categorias bg-red  mr-3"></span> Ver categoría</a>
                       </div>
       
                     </div>
                     <div class="col-lg-4 col-12 d-flex">
                       <div class="d-flex flex-column align-items-center mb-11 mb-xl-0">
-                      <img src="assets/images/svg/categoria2.svg" class="h-categorias">
+                      <img src="assets/images/svg/categoria-2.svg" class="h-categorias">
                       <a href="./categoria-roja.html" class="bg-red br-15 mt-6 width-fit px-2 py-1 d-flex justify-content-center align-items-center text-pink font-weight-bold"> <span class="circle-categorias bg-yellow mr-3 "></span> Ver categoría </a>
                       </div>
                     </div>
                     <div class="col-lg-4 col-12 d-flex">
                       <div class="d-flex flex-column align-items-center">
-                      <img src="assets/images/svg/categoria3.svg" class="h-categorias">
-                      <a href="./categoria-azul.html" class="bg-lightblue br-15 width-fit px-2 py-1 mt-6 d-flex justify-content-center align-items-center text-yellow font-weight-bold"> <span class="circle-categorias bg-red mr-3"></span> Ver categoría </a>
+                      <img src="assets/images/svg/categoria-3.svg" class="h-categorias">
+                      <a href="./categoria-azul.html" class="bg-blue-dark br-15 width-fit px-2 py-1 mt-6 d-flex justify-content-center align-items-center text-yellow font-weight-bold"> <span class="circle-categorias bg-lightblue mr-3"></span> Ver categoría </a>
                       </div>
-      
                     </div>
                   </div>
             
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -224,7 +187,7 @@
             </div>
           </div>
 
-          <div class="col-12 h-xl-100 px-0"  data-anchor="participar" data-tooltip="participar">
+          <div class="col-12 h-xl-100 px-0 d-none d-md-block"  data-anchor="participar" data-tooltip="participar">
             <div class="row h-100 ">
                <div class="col-4 p-0">
                  <div class="row d-flex h-100">
@@ -273,7 +236,7 @@
                         </div>
                       </div>
                     </a>
-                    <a class="nav-link pills py-0" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="true">
+                    <!-- <a class="nav-link pills py-0" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="true">
                       <div class="row">
                         <div class="col">
                             <div class="d-flex align-items-start bg-lightblue">
@@ -283,9 +246,7 @@
                             </div>        
                         </div>
                       </div>
-                    </a>
-                    
-                    
+                    </a> -->
                 </div>
 
               </div>
@@ -299,83 +260,37 @@
                     Y si tu edad está comprendida entre los <b>7</b> a <b>9</b> participarás con el color rojo. <br/><br/>
                     Y si tu edad es de <b>10</b> años hasta <b>12</b> participarás con el azul.
                     </p>
-                    
-                    <a href="./preguntas-frecuentes.html" class="bg-red br-15 mt-3 mt-xl-6 mb-6 mb-xl-0 width-fit pl-2 pr-6 py-1 d-flex justify-content-center align-items-center text-pink font-weight-bold"> <span class="circle-categorias bg-yellow fs-17 mr-3 "></span> Ver preguntas frecuentes </a>
+                    <a href="./preguntas-frecuentes.html" class="bg-red btn-lg br-15 mt-3 mt-xl-6 mb-6 mb-xl-0 width-fit pl-2 pr-6 py-1 d-flex justify-content-center align-items-center text-pink font-weight-bold"> <span class="circle-categorias bg-yellow fs-17 mr-3 "></span> Ver preguntas frecuentes </a>
                   </div>
 
                   <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    <p class="text-black-70"> Es una convocatoria a participar con obras recientes que hayas realizado en técnicas de expresión artísticas, por lo tanto debes ponerte a trabajar.
-                   </p>
-                    <p class="text-black-70"> Deberás realizar una obra bidimensional, es decir de dos dimensiones. Las obras podrán tener una dimensión mínima de a 21 cm x 30 cm, y una dimensión máxima de 70 cm x 100 cm, en cualquiera de sus lados.
-                   </p>
-                    
-                      <p class="text-black-70">  Según el color asignado, tendrás diferentes tareas y propuestas que te guiarán para realizar tu obra y te ayudarán a inspirarte.
-                   </p>
-                    
-                      Una vez realizada la obra tienes que sacarle una foto de frente.Luego Ingresá en este <a href="#inscripcion">LINK</a>,  completá el formulario, envía la foto y listo.
-                    </p>
-                      
-                    <a href="./preguntas-frecuentes.html" class="bg-red br-15 mt-3 mt-xl-6 mb-6 mb-xl-0 width-fit pl-2 pr-6 py-1 d-flex justify-content-center align-items-center text-pink font-weight-bold"> <span class="circle-categorias bg-yellow fs-17 mr-3 "></span> Ver preguntas frecuentes </a>
+                    <p class="text-black-70">Es una convocatoria a participar con obras recientes que hayas realizado en técnicas de expresión artísticas, por lo tanto debes ponerte a trabajar.</p>
+                    <p class="text-black-70">Deberás realizar una obra bidimensional, es decir de dos dimensiones. Las obras podrán tener una dimensión mínima de a 21 cm x 30 cm, y una dimensión máxima de 70 cm x 100 cm, en cualquiera de sus lados.</p>
+                    <p class="text-black-70">Según el color asignado, tendrás diferentes tareas y propuestas que te guiarán para realizar tu obra y te ayudarán a inspirarte.</p>  
+                    <a href="#inscripcion" class="bg-red btn-lg br-15 mt-3 mt-xl-6 mb-6 mb-xl-0 width-fit pl-2 pr-6 py-1 d-flex justify-content-center align-items-center text-pink font-weight-bold"> <span class="circle-categorias bg-yellow fs-17 mr-3 "></span>Inscribirme</a>
                   </div>
 
                   <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                    <p class="text-black-70">
-                      Tienes libertad para trabajar con los materiales que prefieras. Pueden ser materiales convencionales de la actividad artística, como lápices, tintas, pasteles, pinceles, etc. 
-                    
-                    </p>
-                    <p class="text-black-70">
-                        O puedes utilizar materiales no convencionales, es decir, materiales cuya finalidad principal no es artística, como madera, papeles, hilos, etc.
-                     
-                      </p>
-                      <p class="text-black-70">
-                          O incluso puedes utilizar materiales que puedes encontrar en tu casa como tapas, hilos, lanas, etc.
-                        </p>
-
-                          <p class="text-black-70">
-                            Piensa cuál es el material que más se adecua a lo que quieras representar.
-                          </p>
-                    <a href="./preguntas-frecuentes.html" class="bg-red br-15 mt-3 mt-xl-6 mb-6 mb-xl-0 width-fit pl-2 pr-6 py-1 d-flex justify-content-center align-items-center text-pink font-weight-bold"> <span class="circle-categorias bg-yellow fs-17 mr-3 "></span> Ver preguntas frecuentes </a>
+                    <p class="text-black-70">Tienes libertad para trabajar con los materiales que prefieras. Pueden ser materiales convencionales de la actividad artística, como lápices, tintas, pasteles, pinceles, etc.</p>
+                    <p class="text-black-70">O puedes utilizar materiales no convencionales, es decir, materiales cuya finalidad principal no es artística, como madera, papeles, hilos, etc.</p>
+                    <p class="text-black-70">O incluso puedes utilizar materiales que puedes encontrar en tu casa como tapas, hilos, lanas, etc.</p>
+                    <p class="text-black-70">Piensa cuál es el material que más se adecua a lo que quieras representar.</p>
+                    <a href="./preguntas-frecuentes.html" class="bg-red btn-lg br-15 mt-3 mt-xl-6 mb-6 mb-xl-0 width-fit pl-2 pr-6 py-1 d-flex justify-content-center align-items-center text-pink font-weight-bold"> <span class="circle-categorias bg-yellow fs-17 mr-3 "></span> Ver preguntas frecuentes </a>
                   </div>
 
                   <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
-              
-                    <p class="text-black-70">
-                      Como los materiales son libres, también lo son las técnicas con que los vas a aplicar.
-                    </p>
-                 
-                      <p class="text-black-70">
-                        Si eliges trabajar con materiales convencionales, puedes utilizar técnicas de pintura y emplear témperas, acrílicos, esmaltes, pigmentos, etc. con pinceles de diferentes tamaños, u otros instrumentos como esponjas, tenedores, cepillos de diente, espátulas, brochas, etc.
-                      </p>
-                 
-                        <p class="text-black-70">
-                          O puedes enviar un dibujo en materiales como lápices, tizas, pasteles, tintas y plumines, rotuladores o marcadores. En este caso, se utiliza la técnica del dibujo. Y ¡piensa! Quizá recuerdes cuando dibujabas en la tierra o en la arena con una rama o con una tiza en tu vereda.
-                        </p>
-                 
-                          <p class="text-black-70">
-                            También… ¡puedes aventurarte a explorar algunas técnicas alternativas!
-                          </p>
-                 
-                            <p class="text-black-70">
-                              Puedes participar con un grabado que realizado con impresiones por frotados, impresiones de huellas o con vegetales, etc.
-                            </p>
-                 
-                              <p class="text-black-70">
-                                O puedes realizar un collage con materiales en desuso que encuentres en tu casa y que quieras reciclar como papeles, botones, lanas, chapitas, etc.
-                              </p>
-                 
-                                <p class="text-black-70">
-                                  O quizás quieras realizar una historieta, un comics o un video.
-                                </p>
-                 
-                                  <p class="text-black-70">
-                                    O enviar una fotografía.
-                    </p>
-                    
-                    <a href="./preguntas-frecuentes.html" class="bg-red br-15 mt-3 mt-xl-6 mb-6 mb-xl-0 width-fit pl-2 pr-6 py-1 d-flex justify-content-center align-items-center text-pink font-weight-bold"> <span class="circle-categorias bg-yellow fs-17 mr-3 "></span> Ver preguntas frecuentes </a>
+                    <p class="text-black-70">Como los materiales son libres, también lo son las técnicas con que los vas a aplicar.</p>
+                    <p class="text-black-70">Si eliges trabajar con materiales convencionales, puedes utilizar técnicas de pintura y emplear témperas, acrílicos, esmaltes, pigmentos, etc. con pinceles de diferentes tamaños, u otros instrumentos como esponjas, tenedores, cepillos de diente, espátulas, brochas, etc.</p>
+                    <p class="text-black-70">O puedes enviar un dibujo en materiales como lápices, tizas, pasteles, tintas y plumines, rotuladores o marcadores. En este caso, se utiliza la técnica del dibujo. Y ¡piensa! Quizá recuerdes cuando dibujabas en la tierra o en la arena con una rama o con una tiza en tu vereda.</p>
+                    <p class="text-black-70">También… ¡puedes aventurarte a explorar algunas técnicas alternativas!</p>
+                    <p class="text-black-70">Puedes participar con un grabado que realizado con impresiones por frotados, impresiones de huellas o con vegetales, etc.</p>
+                    <p class="text-black-70">O puedes realizar un collage con materiales en desuso que encuentres en tu casa y que quieras reciclar como papeles, botones, lanas, chapitas, etc.</p>
+                    <p class="text-black-70">O quizás quieras realizar una historieta, un comics o un video.</p>
+                    <p class="text-black-70">O enviar una fotografía.</p>
+                    <a href="./preguntas-frecuentes.html" class="bg-red btn-lg br-15 mt-3 mt-xl-6 mb-6 mb-xl-0 width-fit pl-2 pr-6 py-1 d-flex justify-content-center align-items-center text-pink font-weight-bold"> <span class="circle-categorias bg-yellow fs-17 mr-3 "></span> Ver preguntas frecuentes </a>
                   </div>
 
                 </div>
-                
               </div>
                <div class="col-4" style="background: linear-gradient(90deg, #32B9FD 90%, #FFFFFF 0%);">
                 <div class="row">
@@ -383,11 +298,110 @@
                   <div class="col-12 lapiz-verde px-0 d-flex bg-green-lapiz" > </div>
                   <div class="col-12 lapiz-rosa px-0 d-flex bg-pink-lapiz" > </div>
                   <div class="col-12 lapiz-rojo px-0 d-flex bg-red-lapiz" > </div>
-                  <div class="col-12 lapiz-azul px-0 d-flex bg-lightblue-lapiz" >  </div>
+                  <!-- <div class="col-12 lapiz-azul px-0 d-flex bg-lightblue-lapiz" >  </div> -->
                 </div>
                </div>
               </div>
-            </div>
+          </div>
+
+              <!-- Section - Home -->
+              
+                <div class="container-fluid text-center text-white justify-content-center justify-content-xl-start d-flex flex-column pr-0 pl-0 d-none d-sm-block d-md-none">
+                  <div class="row">
+                    
+                    <div class="col-xl-9 col-12 px-xl-15 pt-xl-13 pt-7 text-left">
+                      <div class="mb-2" id="accordion">
+                        <div class="card border-0 bg-transparent">
+                          <div class="card-header p-0 bg-yellow" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link text-left text-grey font-weight-bold w-100 fs-17" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Quiénes pueden participar?
+                              </button>
+                            </h5>
+                          </div>
+        
+                          <div id="collapseOne" class="collapse bg-white" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body text-black-70">
+                              Pueden participar niños de todo el mundo cuyas edades estén comprendida entre los <b>4</b> y <b>12</b> años inclusive.<br><br>
+                              Si tienes entre <b>4</b> a <b>6</b> años participarás con el color amarillo.<br><br>
+                              Y si tu edad está comprendida entre los <b>7</b> a <b>9</b> participarás con el color rojo.<br><br>
+                              Y si tu edad es de <b>10</b> años hasta <b>12</b> participarás con el azul.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="mb-2" id="accordion">
+                        <div class="card border-0 bg-transparent">
+                          <div class="card-header p-0 bg-green" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link text-left text-grey font-weight-bold w-100 fs-17" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                ¿Cómo puedes participar?
+                              </button>
+                            </h5>
+                          </div>
+        
+                          <div id="collapseTwo" class="collapse bg-white" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body text-black-70">
+                              Es una convocatoria a participar con obras recientes que hayas realizado en técnicas de expresión artísticas, por lo tanto debes ponerte a trabajar.<br><br>
+                              Deberás realizar una obra bidimensional, es decir de dos dimensiones. Las obras podrán tener una dimensión mínima de a 21 cm x 30 cm, y una dimensión máxima de 70 cm x 100 cm, en cualquiera de sus lados.<br><br>
+                              Según el color asignado, tendrás diferentes tareas y propuestas que te guiarán para realizar tu obra y te ayudarán a inspirarte.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="mb-2" id="accordion">
+                        <div class="card border-0 bg-transparent">
+                          <div class="card-header p-0 bg-pink" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link text-left text-grey font-weight-bold w-100 fs-17" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
+                                ¿Qué materiales puedes utilizar?
+                              </button>
+                            </h5>
+                          </div>
+        
+                          <div id="collapseThree" class="collapse bg-white" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body text-black-70">
+                              Tienes libertad para trabajar con los materiales que prefieras. Pueden ser materiales convencionales de la actividad artística, como lápices, tintas, pasteles, pinceles, etc.<br><br>
+                              O puedes utilizar materiales no convencionales, es decir, materiales cuya finalidad principal no es artística, como madera, papeles, hilos, etc.<br><br>
+                              O incluso puedes utilizar materiales que puedes encontrar en tu casa como tapas, hilos, lanas, etc.<br><br>
+                              Piensa cuál es el material que más se adecua a lo que quieras representar.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="mb-2" id="accordion">
+                        <div class="card border-0 bg-transparent">
+                          <div class="card-header p-0 bg-red" id="headingFour">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link text-left text-grey font-weight-bold w-100 fs-17" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                ¿Cuáles son las técnicas con las que puedes hacer tu obra?
+                              </button>
+                            </h5>
+                          </div>
+        
+                          <div id="collapseFour" class="collapse bg-white" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body text-black-70">
+                              Como los materiales son libres, también lo son las técnicas con que los vas a aplicar.<br><br>
+                              Si eliges trabajar con materiales convencionales, puedes utilizar técnicas de pintura y emplear témperas, acrílicos, esmaltes, pigmentos, etc. con pinceles de diferentes tamaños, u otros instrumentos como esponjas, tenedores, cepillos de diente, espátulas, brochas, etc.<br><br>
+                              O puedes enviar un dibujo en materiales como lápices, tizas, pasteles, tintas y plumines, rotuladores o marcadores. En este caso, se utiliza la técnica del dibujo. Y ¡piensa! Quizá recuerdes cuando dibujabas en la tierra o en la arena con una rama o con una tiza en tu vereda.<br><br>
+                              También… ¡puedes aventurarte a explorar algunas técnicas alternativas!<br><br>
+                              Puedes participar con un grabado que realizado con impresiones por frotados, impresiones de huellas o con vegetales, etc.<br><br>
+                              O puedes realizar un collage con materiales en desuso que encuentres en tu casa y que quieras reciclar como papeles, botones, lanas, chapitas, etc.<br><br>
+                              O quizás quieras realizar una historieta, un comics o un video.<br><br>
+                              O enviar una fotografía.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              
+            
 
             <div class="col-12 h-xl-100 px-0">
               <div class="row h-100 ">
@@ -425,11 +439,8 @@
                 </div>
         </div>
       </section>
-
-
+      
       <!-- Section - Contact -->
-
-
       <section class="ln-section d-xl-flex m-xl-0 p-xl-0 flex-column" id="inscripcion" data-anchor="inscribirme" data-tooltip="inscribirme">
         <div class="overlay overlay-advanced">
           <div class="overlay-inner bg-image-holder bg-pink">
@@ -445,7 +456,7 @@
                 <form class="mb-0" id="cf" name="cf" action="include/upload.php" enctype="multipart/form-data" method="post" autocomplete="off">
                   <div class="form-row">
   
-                    <div class="col-6">
+                    <div class="col-md-6 col-sm-12">
                       <div class="col-12">
                         <div class="form-group  text-black-70 font-weight-bold">
                           <label for="exampleInputEmail1">Nombre y Apellido del participante</label>
@@ -501,7 +512,7 @@
                       </div>
                     </div>
   
-                    <div class="col-6 col-md-6">
+                    <div class="col-md-6 col-sm-12">
                       <div class="col-12">
                         <div class="form-group  text-black-70 font-weight-bold">
                           <label for="exampleInputEmail1">Técnica</label>
@@ -594,38 +605,47 @@
           </div>
         </div>
       </div>
-        <div class="container-fluid mt-6 mt-xl-0  py-xl-6 w-100 bg-pastel">
+        <div class="container-fluid mt-6 mt-xl-0 py-xl-6 w-100 bg-pastel d-none d-md-block">
           <div class="row">
             <div class="col-12 col-xl-6 mt-5 mt-xl-0 d-flex d-xl-block justify-content-around text-center align-items-center">
-              <img
-                src="assets/images/svg/fuca-footer.svg"
-                height="43"
-                width="225"
-                alt="logo"
-              />
-              <img
-                class="ml-6"
-                src="assets/images/svg/bienal-footer.svg"
-                height="68"
-                width="154"
-                alt="logo"
-              />
+              <img src="assets/images/svg/fuca-footer.svg" height="43" width="225" alt="logo"/>
+              <img class="ml-6" src="assets/images/svg/bienal-footer.svg" height="68" width="154" alt="logo">
             </div>
             <div class="col-12 col-xl-6 mt-6 mt-xl-0 d-flex justify-content-xl-center text-left justify-content-around align-items-center">
-              <span class="font-weight-bold text-brown fs-17"> <i class="fa fa-envelope" aria-hidden="true"></i>
-                 bienal@fucaarte.org.ar</span
-              >
+              <span class="font-weight-bold text-brown fs-17"> <i class="fa fa-envelope" aria-hidden="true"></i> bienal@fucaarte.org.ar</span>
               <div class="ml-6">
                 <a href="https://www.instagram.com/bienaldearteinfantil/">
-                <img src="assets/images/svg/instagram-footer.svg" height="32" />
-              </a>
+                  <img src="assets/images/svg/instagram-footer.svg" height="32">
+                </a>
                 <a href="https://www.facebook.com/LaBienalBA/">
-                <img  src="assets/images/svg/facebook-footer.svg"  height="36"/>
-              </a>
+                  <img  src="assets/images/svg/facebook-footer.svg" height="36">
+                </a>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Footer Mobile -->
+        <div class="container-fluid mt-6 mt-xl-0 py-xl-6 w-100 bg-pastel d-block d-sm-block d-md-none">
+          <div class="row">
+            <div class="col-12 mt-5 text-center">
+              <img src="assets/images/svg/fuca-footer.svg" height="43" width="225" alt="logo"/>
+              <img class="mt-5" src="assets/images/svg/bienal-footer.svg" height="68" width="154" alt="logo">
+            </div>
+            <div class="col-12 mt-5 text-center">
+              <span class="font-weight-bold text-brown fs-17"> <i class="fa fa-envelope" aria-hidden="true"></i> bienal@fucaarte.org.ar</span>
+              <div class="mt-3 mb-3">
+                <a href="https://www.instagram.com/bienaldearteinfantil/">
+                  <img src="assets/images/svg/instagram-footer.svg" height="32">
+                </a>
+                <a href="https://www.facebook.com/LaBienalBA/">
+                  <img  src="assets/images/svg/facebook-footer.svg" height="36">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
     </div>
 

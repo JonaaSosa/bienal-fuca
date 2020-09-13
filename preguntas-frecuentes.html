@@ -76,19 +76,14 @@
     <div id="top"></div>
 
     <!-- Site navigation -->
-    <nav
-      class="site-navbar-transparent height-navbar navbar navbar-expand-lg navbar-dark fixed-top shadow-light bg-pastel px-xl-0 py-0"
-    >
-      <a
-        href="https://fucaarte.org/"
-        class="col-2 bg-pastel py-4 px-0 text-center"
-      >
+    <nav class="site-navbar-transparent height-navbar navbar navbar-expand-lg navbar-dark shadow-light bg-lightblue px-xl-0 py-0">
+      <a  href="https://fucaarte.org/" class="col-2 bg-lightblue py-4 px-0 text-center">
         <img src="assets/images/svg/logo.svg" />
       </a>
 
       <!-- Toggler -->
       <button
-        class="navbar-toggler-alternative"
+        class="navbar-toggler-alternative "
         type="button"
         data-toggle="collapse"
         data-target="#navbarCollapse"
@@ -101,105 +96,42 @@
 
       <!-- Collapse -->
       <div class="col-xl-10 d-xl-flex justify-content-around p-0 h-100">
-        <div class="collapse navbar-collapse h-100" id="navbarCollapse">
+        <div class="collapse navbar-collapse " id="navbarCollapse">
           <!-- Navigation -->
-          <ul
-            class="navbar-nav justify-content-around h-100"
-            style="flex: 1"
-            id="navigation"
-          >
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
-            >
-              <a
-                href="#bienal"
-                class="nav-link font-weight-bold text-uppercase text-red roboto"
-                >La bienal</a
-              >
-            </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-red"
-            >
-              <a
-                href="./index.html#bienal"
-                class="nav-link text-uppercase text-pastel roboto"
-                >Categorias</a
-              >
-            </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
-            >
-              <a
-                href="#participantes"
-                class="text-center nav-link font-weight-bold text-uppercase text-red roboto"
-                >¿Como participar?</a
-              >
-            </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex-1 bg-green"
-            >
+          <ul class="navbar-nav justify-content-around h-100" style="flex: 1" id="navigation">
+            <li class="nav-item d-flex align-items-center justify-content-center flex-1 bg-pink">
               <div class="dropdown w-100 text-center">
-                <a
-                  href="./index.html"
-                  class="nav-link font-weight-bold text-uppercase text-yellow-light roboto dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Bases y condiciones</a
-                >
-                <div
-                  class="dropdown-menu w-100"
-                  aria-labelledby="dropdownMenuButton"
-                >
-                  <a
-                    href="./assets/pdfs/Bases ESP.pdf"
-                    target="_blank"
-                    download
-                    class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center"
-                    href="#"
-                    ><img src="assets/images/svg/arg.png" /> Bases y
-                    condiciones</a
-                  >
-                  <a
-                    href="./assets/pdfs/Bases ENG.pdf"
-                    target="_blank"
-                    download
-                    class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center"
-                    href="#"
-                    ><img src="assets/images/svg/eeuu.png" /> Terms and
-                    conditions</a
-                  >
+                <a href="./index.html" class="nav-link font-weight-bold text-uppercase text-red roboto dropdown-toggle" type="button" id="dropdownMenuBienal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  La Bienal</a>
+                <div class="dropdown-menu w-100 " aria-labelledby="dropdownMenuBienal">
+                  <a  href="staff.html" download class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center">Staff</a>
                 </div>
               </div>
             </li>
-            <li
-              class="pointer nav-item d-flex align-items-center justify-content-center flex--75 bg-pink"
-            >
-              <a
-                href="./jurados.html"
-                class="nav-link font-weight-bold text-uppercase text-red roboto"
-                >Jurado</a
-              >
+            <li class="nav-item d-flex align-items-center justify-content-center flex--75 bg-green">
+              <a href="./index.html#bienal" class="nav-link text-uppercase text-yellow-dark roboto">Categorias</a>
             </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-yellow"
-            >
-              <a
-                href="./premios.html"
-                class="nav-link font-weight-bold text-uppercase text-red roboto"
-                >Premios</a
-              >
+            <li class="nav-item d-flex align-items-center justify-content-center flex--75 bg-orange">
+              <a href="#participantes" class="text-center nav-link font-weight-bold text-uppercase text-grey roboto">¿Como participar?</a>
             </li>
-            <li
-              class="nav-item d-flex align-items-center justify-content-center flex--75 bg-orange"
-            >
-              <a
-                href="./index.html#inscripcion"
-                class="nav-link font-weight-bold text-uppercase text-violet roboto"
-                >Inscribirme</a
-              >
+            <li class="nav-item d-flex align-items-center justify-content-center flex-1 bg-brown">
+              <div class="dropdown w-100 text-center">
+                <a href="./index.html" class="nav-link font-weight-bold text-uppercase text-sky roboto dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Bases y condiciones</a>
+                <div class="dropdown-menu w-100 " aria-labelledby="dropdownMenuButton">
+                  <a href="./assets/pdfs/Bases ESP.pdf" target='_blank' download class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center" href="#">Bases y condiciones</a>
+                  <a href="./assets/pdfs/Bases ENG.pdf" target='_blank' download class="dropdown-item text-uppercase text-yellow-light font-weight-bold text-center" href="#">Terms and conditions</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-flex align-items-center justify-content-center flex--75 bg-violet-light">
+              <a href="./index.html#inscripcion" class="nav-link font-weight-bold text-uppercase text-blue-dark roboto">Inscribirme</a>
+            </li>
+            <li class="pointer nav-item d-flex align-items-center justify-content-center flex--75 bg-lightgreen">
+              <a href="./jurados.html" class="nav-link font-weight-bold text-uppercase text-pink-dark roboto">Jurado</a>
+            </li>
+            <li class="nav-item d-flex align-items-center justify-content-center flex--75 bg-pink-dark">
+              <a href="./premios.html" class="nav-link font-weight-bold text-uppercase text-yellow-dark roboto">Premios</a>
             </li>
           </ul>
         </div>
@@ -250,7 +182,7 @@
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        ¿Qué es una Bienal de Arte o una Trienal Arte Infantil?
+                        ¿Desde cuándo puedo enviar las fotos para participar?
                         <span
                           class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
                         ></span>
@@ -265,9 +197,7 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body text-violet">
-                      Una Bienal es un evento que se realiza cada 2 años. Arte
-                      porque hace referencia a las Artes Visuales. Infantil
-                      porque es una convocatoria para los niños.
+                      Podrás enviar la foto de tu trabajo a partir de 18 de septiembre hasta el día 20 de noviembre de 2020.
                     </div>
                   </div>
                 </div>
@@ -287,7 +217,7 @@
                         aria-expanded="true"
                         aria-controls="collapseTwo"
                       >
-                        ¿Quiénes pueden participar?
+                        ¿Cómo puedo participar?
                         <span
                           class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
                         ></span>
@@ -302,14 +232,8 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body text-violet">
-                      Pueden participar niños de todo el mundo cuyas edades
-                      estén comprendida entre los 4 y 12 años inclusive. <br />
-                      Si tienes entre 4 a 6 años participarás con el color
-                      amarillo.<br />
-                      Y si tu edad está comprendida entre los 7 a 9 participarás
-                      con el color rojo.<br />
-                      Y si tu edad es de 10 años hasta 12 participarás con el
-                      azul.
+                      Enviando la foto de tu obra y tus datos, completando el formulario de inscripción en el sitio web de la Bienal.
+                      O a través de tu escuela: Tu maestra enviará las fotos y los datos de las obras de sus alumnos a través del formulario de inscripción.
                     </div>
                   </div>
                 </div>
@@ -329,7 +253,7 @@
                         aria-expanded="true"
                         aria-controls="collapseTwo"
                       >
-                        ¿Cómo puedo participar?
+                        ¿Quiénes pueden participar?
                         <span
                           class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
                         ></span>
@@ -344,15 +268,7 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body text-violet">
-                      Es una convocatoria a participar con obras recientes que
-                      hayas realizado en técnicas de expresión artísticas, por
-                      lo tanto debes ponerte a trabajar. <br />
-                      Deberás realizar una obra bidimensional, es decir de dos
-                      dimensiones que no excedan lo 0,50 cm de ancho y 1 metro
-                      (100 cm) de alto. <br />
-                      Una vez realizada la obra tienes que sacarle una foto de
-                      frente.Luego Ingresá en este LINK, completá el formulario,
-                      envía la foto y listo.
+                      Están invitados a  participar niños de todo el mundo cuyas edades estén comprendidas entre 4 y 12 años inclusive.
                     </div>
                   </div>
                 </div>
@@ -372,7 +288,7 @@
                         aria-expanded="true"
                         aria-controls="collapseFour"
                       >
-                        ¿Qué materiales puedo utilizar?
+                        ¿Qué tipo de escuelas pueden  participar?
                         <span
                           class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
                         ></span>
@@ -387,16 +303,7 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body text-violet">
-                      Tienes libertad para trabajar con los materiales que
-                      prefieras. Pueden ser materiales convencionales de la
-                      actividad artística, como lápices, tintas, pasteles,
-                      pinceles, etc. <br />
-                      O puedes utilizar materiales no convencionales, es decir,
-                      cuya finalidad principal no es artística como madera,
-                      papeles, hilos, etc. O incluso puedes utilizar materiales
-                      en desusos como tapas, hilos, lanas, etc.<br />
-                      Piensa cuál es el material que más se adecúa a lo que
-                      quieras representar.
+                      Todas las escuelas, sin ningún tipo de restricción. Están invitadas a participar escuelas públicas o privadas, comunes  o especiales y de niveles inicial, primario o secundario. También pueden participar los talleres de expresión plástica infanto juvenil, públicos o privados.
                     </div>
                   </div>
                 </div>
@@ -416,9 +323,7 @@
                         aria-expanded="true"
                         aria-controls="collapseFive"
                       >
-                        ¿Cuáles son las técnicas con las que puedo hacer mi
-                        obra?
-
+                        ¿Cómo y cuándo es la inscripción?.
                         <span
                           class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
                         ></span>
@@ -433,33 +338,10 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body text-violet">
-                      Como los materiales son libres, también lo son los
-                      instrumentos que puedes utilizar y las técnicas que vas
-                      aplicar.<br />
-                      Puedes utilizar técnicas de pintura como témperas,
-                      acrílicos, esmaltes, pigmentos, etc. Y utilizar pinceles
-                      de diferentes tamaños, u otros instrumentos como esponjas,
-                      tenedores, cepillos de diente, espátulas, brochas, etc.<br />
-                      O puedes enviar un dibujo en materiales como lápices,
-                      tizas, pasteles, tintas y plumines, rotuladores o
-                      marcadores,…<br />
-                      Y piensa! quizá recuerdes cuando dibujabas en la tierra o
-                      en la arena con una rama o con una tiza en tu vereda.<br />
-                      También puedes enviar fotografías de trabajos que hayas
-                      realizado en gran tamaño o algo que hayas visto y te haya
-                      gustado registrar.<br />
-                      O puedes participar con un grabado que puedas realizar con
-                      impresiones por frotados, impresiones de huellas o con
-                      vegetales, etc<br />
-                      O puedes realizar un collage con materiales en desuso que
-                      encuentres en tu casa y que quieras reciclar como papeles,
-                      botones, lanas, chapitas, etc.<br />
-                      O quizás quieras realizar una historieta, un comics o un
-                      video.<br />
-                      O enviar una fotografía. <br />
-                      ¿Sabes que es un screens? Son obras que han sido
-                      realizadas o reproducidas en el plano bidimensional o
-                      pantalla.
+                      La inscripción es libre y gratuita.<br>
+                      Debes enviar una foto de tu obra a través del formulario de inscripción ubicado en la pagina web binal.fucaarte.org  completando los datos  y quedarás inscripto.<br>
+                      El periodo de inscripción será durante los  meses de setiembre,octubre y noviembre de 2020.
+
                     </div>
                   </div>
                 </div>
@@ -479,8 +361,7 @@
                         aria-expanded="true"
                         aria-controls="collapseSix"
                       >
-                        ¿Qué medidas debe tener la obra?
-
+                        ¿ Cuáles son los temas sugeridos?
                         <span
                           class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
                         ></span>
@@ -495,9 +376,12 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body text-violet">
-                      Las obras podrán tener una dimensión mínima de a 21 cm x
-                      30 cm, y una dimensión máxima de 70 cm x 100 cm, en
-                      cualquiera de sus lados.
+                      Puede elegir el tema que prefieras, sin embargo en la página bienal.fucaarte.org encontrarás sugerencias de temas que puedes representar. 
+                      Los tres temas sugeridos son: “Viva la naturaleza”, “Todo en movimiento” y “Sin límites”. Cada tema  lo encontrarás desarrollado de 
+                      acuerdo a la categoría que te corresponda por tu edad.<br>
+                      <strong>Amarillo:</strong> “Animales y plantas”, “Huellas”, líneas y límites<br>
+                      <strong>Rojo:</strong> “Mimetismo”, “Laberintos” , “trayectorias”<br>
+                      <strong>Azul:</strong> “Biodiversidad”, “ Sin límites ni fronteras” , “los fenómenos y sus consecuencias”<br>
                     </div>
                   </div>
                 </div>
@@ -517,8 +401,7 @@
                         aria-expanded="true"
                         aria-controls="collapseSeven"
                       >
-                        ¿Cuantas fotos de mi obra debo enviar?
-
+                        ¿Qué técnicas y materiales puedo utilizar?
                         <span
                           class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
                         ></span>
@@ -533,13 +416,10 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body text-violet">
-                      Para la inscripción deberá enviarse una (1) fotografía que
-                      dé cuenta de la totalidad de la obra. En el caso de
-                      considerarlo necesario, se podrán adjuntar hasta dos fotos
-                      extas con detalles de la obra. Las fotos deberán ser en
-                      formato JPG y con un peso máximo de 3 megabytes (MB) por
-                      imagen para subir a la plataforma que dispone la fundación
-                      para el presente concurso.
+                      Puedes utilizar las técnicas o materiales que prefieras.<br>
+                      En la página te ofrecemos algunas sugerencias para trabajar historietas, videos, dibujos o pinturas.<br>
+                      Encontrarás también ejemplos de artistas que trabajaron estos temas y usaron materiales diversos. 
+                      Son ideas que te ayudarán a encontrar motivos y técnicas de inspiración para tus trabajos.<br>
                     </div>
                   </div>
                 </div>
@@ -559,8 +439,7 @@
                         aria-expanded="true"
                         aria-controls="collapseHeight"
                       >
-                        ¿Cómo me entero de que mi obra fue seleccionada?
-
+                        ¿Puedo presentar más de un trabajo?
                         <span
                           class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
                         ></span>
@@ -575,14 +454,7 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body text-violet">
-                      Las postulaciones serán evaluadas por un Comité de
-                      Selección integrado por el JURADO entre el 20 de noviembre
-                      y el 20 de diciembre de 2020. La publicación de las obras
-                      seleccionadas se realizará posterior a la selección, a
-                      través del sitio web oficial. Los seleccionados serán
-                      notificados al correo electrónico consignado al
-                      postularse, y posteriormente se publicará la lista
-                      completa de seleccionados en la página web de FUCA.
+                      Si puedes hacerlo.
                     </div>
                   </div>
                 </div>
@@ -602,8 +474,7 @@
                         aria-expanded="true"
                         aria-controls="collapseNine"
                       >
-                        ¿Cuándo es la muestra de las obras seleccionadas ?
-
+                        ¿Cuándo se sabrá el resultado de los trabajos seleccionados?
                         <span
                           class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
                         ></span>
@@ -618,10 +489,7 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body text-violet">
-                      La 1° Muestra de la Bienal de Arte Infantil FUCA y
-                      exposición de las obras seleccionadas tendrá lugar durante
-                      2021 en espacio a definir por la Fundación Calamuchita
-                      Arte
+                      En el mes de diciembre de 2020 se seleccionarán los trabajos que serán expuestos en la Bienal.
                     </div>
                   </div>
                 </div>
@@ -641,8 +509,7 @@
                         aria-expanded="true"
                         aria-controls="collapseTen"
                       >
-                        ¿Cuando se entregan los premios de la Bienal ?
-
+                        ¿Qué significa haber sido seleccionado?
                         <span
                           class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
                         ></span>
@@ -657,59 +524,83 @@
                     data-parent="#accordion"
                   >
                     <div class="card-body text-violet">
-                      Las obras seleccionadas serán evaluadas por el JURADO para
-                      la premiación de las obras ganadoras durante el primer
-                      semestre de 2021. <br />
-                      Una vez adjudicados los premios, se labrará un acta
-                      firmada por el jurado de selección y premiación. Los
-                      participantes seleccionados podrán tener acceso a las
-                      actas a través del sitio web oficial.
+                      Significa que deberás <strong>enviar tu obra</strong> para ser expuesta con todos los trabajos que integrarán la Bienal de Arte Infantil FUCA.  Las obras seleccionadas serán evaluadas por un jurado  durante el primer semestre de 2021 y se adjudicará el premio a los mejores trabajos de cada categoría.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-5" id="accordion">
+                <div class="card border-0 bg-transparent">
+                  <div
+                    class="card-header p-0 card-tecnica bg-red"
+                    id="headingTen"
+                  >
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link text-left text-yellow-light font-weight-bold w-100 fs-17"
+                        data-toggle="collapse"
+                        data-target="#collapseEleven"
+                        aria-expanded="true"
+                        aria-controls="collapseEleven"
+                      >
+                        ¿ Cuándo es la muestra de las obras seleccionadas ?
+                        <span
+                          class="float-right fs-22 text-yellow fa fa-chevron-circle-down"
+                        ></span>
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="collapseEleven"
+                    class="collapse bg-yellow-light"
+                    aria-labelledby="headingTen"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body text-violet">
+                      La 1° Muestra de la Bienal de Arte Infantil FUCA y exposición de las obras seleccionadas tendrá lugar durante 2021 en espacio a definir por la Fundación Calamuchita Arte
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="container-fluid position-relative mt-6 mt-xl-0 py-xl-6 bottom-0 w-100 bg-pastel"
-          >
+          <div class="container-fluid mt-6 mt-xl-0 py-xl-6 w-100 bg-pastel d-none d-md-block">
             <div class="row">
-              <div
-                class="col-12 col-xl-6 mt-5 mt-xl-0 d-flex d-xl-block justify-content-around align-items-center"
-              >
-                <img
-                  src="assets/images/svg/fuca-footer.svg"
-                  height="43"
-                  width="225"
-                  alt="logo"
-                />
-                <img
-                  class="ml-6"
-                  src="assets/images/svg/bienal-footer.svg"
-                  height="68"
-                  width="154"
-                  alt="logo"
-                />
+              <div class="col-12 col-xl-6 mt-5 mt-xl-0 d-flex d-xl-block justify-content-around text-center align-items-center">
+                <img src="assets/images/svg/fuca-footer.svg" height="43" width="225" alt="logo"/>
+                <img class="ml-6" src="assets/images/svg/bienal-footer.svg" height="68" width="154" alt="logo">
               </div>
-              <div
-                class="col-12 col-xl-6 mt-6 mt-xl-0 d-flex mb-4 mb-xl-0 justify-content-xl-center justify-content-around align-items-center"
-              >
-                <span class="font-weight-bold text-brown fs-17">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                  bienal@fucaarte.org.ar</span
-                >
+              <div class="col-12 col-xl-6 mt-6 mt-xl-0 d-flex justify-content-xl-center text-left justify-content-around align-items-center">
+                <span class="font-weight-bold text-brown fs-17"> <i class="fa fa-envelope" aria-hidden="true"></i> bienal@fucaarte.org.ar</span>
                 <div class="ml-6">
                   <a href="https://www.instagram.com/bienaldearteinfantil/">
-                    <img
-                      src="assets/images/svg/instagram-footer.svg"
-                      height="32"
-                    />
+                    <img src="assets/images/svg/instagram-footer.svg" height="32">
                   </a>
                   <a href="https://www.facebook.com/LaBienalBA/">
-                    <img
-                      src="assets/images/svg/facebook-footer.svg"
-                      height="36"
-                    />
+                    <img  src="assets/images/svg/facebook-footer.svg" height="36">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Footer Mobile -->
+          <div class="container-fluid mt-6 mt-xl-0 py-xl-6 w-100 bg-pastel d-block d-sm-block d-md-none">
+            <div class="row">
+              <div class="col-12 mt-5 text-center">
+                <img src="assets/images/svg/fuca-footer.svg" height="43" width="225" alt="logo"/>
+                <img class="mt-5" src="assets/images/svg/bienal-footer.svg" height="68" width="154" alt="logo">
+              </div>
+              <div class="col-12 mt-5 text-center">
+                <span class="font-weight-bold text-brown fs-17"> <i class="fa fa-envelope" aria-hidden="true"></i> bienal@fucaarte.org.ar</span>
+                <div class="mt-3 mb-3">
+                  <a href="https://www.instagram.com/bienaldearteinfantil/">
+                    <img src="assets/images/svg/instagram-footer.svg" height="32">
+                  </a>
+                  <a href="https://www.facebook.com/LaBienalBA/">
+                    <img  src="assets/images/svg/facebook-footer.svg" height="36">
                   </a>
                 </div>
               </div>
